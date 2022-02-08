@@ -20,6 +20,7 @@
         <search_results_configuration/>
         <sp_chat_queue/>
         <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sqanda_knowledge_base/>
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-31 18:29:20</sys_created_on>
@@ -36,6 +37,7 @@
         <title>Guess the word!</title>
         <ts_index_group/>
         <url_suffix>word</url_suffix>
+        <user_registration_config/>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=0221ee8b2f1101102e98f5ecf699b607"/>
 </record_update>
