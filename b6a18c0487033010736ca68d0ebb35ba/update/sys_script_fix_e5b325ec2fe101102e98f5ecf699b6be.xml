@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Background Utils</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[//generateDailyResults(1);
+
+// Args:  Number of Records (integer)
+function generateDailyResults(numOfRecs) {
+    var dailyResults = new GlideRecord("x_317911_us_telc_0_daily_results");
+    var gameData = '<table style="border-collapse: collapse; width: 10%;" border="1"><tbody><tr style="height: 13px;"><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td></tr><tr style="height: 13px;"><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #dc9f60; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td></tr><tr style="height: 13px;"><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #317256; width: 20%;">&nbsp;</td><td style="background-color: #88b0d5; width: 20%;">&nbsp;</td><td style="background-color: #317256; width: 20%;">&nbsp;</td></tr><tr style="height: 10px;"><td style="background-color: #317256; width: 20%;">&nbsp;</td><td style="background-color: #317256; width: 20%;">&nbsp;</td><td style="background-color: #317256; width: 20%;">&nbsp;</td><td style="background-color: #317256; width: 20%;">&nbsp;</td><td style="background-color: #317256; width: 20%;">&nbsp;</td></tr></tbody></table><p></p>';
+
+    var users = new GlideRecord("sys_user");
+    users.addActiveQuery();
+    users.addQuery("password_needs_reset", false);
+    users.addQuery("locked_out", false);
+    users.addQuery("web_service_access_only", false);
+    users.addQuery("internal_integration_user", false);
+    users.addNotNullQuery("name");
+    users.addNotNullQuery("email");
+    users.query();
+
+    var count = 0;
+    while (users.next()) {
+        if (count != numOfRecs) {
+            dailyResults.newRecord();
+            dailyResults.setValue("user", users.getUniqueValue());
+            dailyResults.setValue("game_data", gameData);
+            dailyResults.setValue("tries", 4);
+            dailyResults.setValue("post", true);
+            dailyResults.setValue("pass", true);
+            dailyResults.insert();
+			++count;
+        }
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-05 06:06:01</sys_created_on>
+        <sys_id>e5b325ec2fe101102e98f5ecf699b6be</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Background Utils</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_script_fix_e5b325ec2fe101102e98f5ecf699b6be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 06:18:21</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

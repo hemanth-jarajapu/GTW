@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-04 10:16:25</sys_created_on>
+        <sys_id>ec2751d02f6901102e98f5ecf699b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_317911_us_telc_0_user_stats.x_317911_us_telc_0.user_stats_user</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_security_acl display_value="x_317911_us_telc_0_user_stats">942751d02f6901102e98f5ecf699b69d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ec2751d02f6901102e98f5ecf699b6a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-04 10:16:25</sys_updated_on>
+        <sys_user_role display_value="x_317911_us_telc_0.user_stats_user" name="x_317911_us_telc_0.user_stats_user">042791102f6901102e98f5ecf699b6fa</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

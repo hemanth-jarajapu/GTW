@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_317911_us_telc_0.Update Game Data</api_name>
+        <description/>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Update Game Data</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "data",&#13;
+    "label": "Data",&#13;
+    "description": "HTML String",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+ {&#13;
+  "name": "recordId",&#13;
+  "label": "Record",&#13;
+  "description": "Record to edit",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "reference",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": "",&#13;
+  "typeMetadata": {"reference": "@table"}&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Data",
+  "comment" : ""
+}, {
+  "message" : "HTML String",
+  "comment" : ""
+}, {
+  "message" : "Record",
+  "comment" : ""
+}, {
+  "message" : "Record to edit",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	var resultGR = new GlideRecord("x_317911_us_telc_0_daily_results");
+	resultGR.get(input.recordId);
+	resultGR.game_data = input.data;
+	resultGR.update();
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-06 15:08:14</sys_created_on>
+        <sys_id>f3cbac412f29c1102e98f5ecf699b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Game Data</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_f3cbac412f29c1102e98f5ecf699b634</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-02-06 15:08:14</sys_updated_on>
+    </sys_ux_data_broker_transform>
+</record_update>

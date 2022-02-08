@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[gel("showit").innerHTML = htmlDecode(gel("results").innerHTML);
+
+function htmlDecode(input) {
+  var doc = new DOMParser().parseFromString(input, "text/html");
+  return doc.documentElement.textContent;
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_317911_us_telc_0_GTW_UserGameResult.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+  <g:evaluate var="jvar_rid" expression="RP.getParameterValue('sysparm_rid')" jelly="true" />
+
+  <g:evaluate jelly="true">
+    var gr = new GlideRecord("x_317911_us_telc_0_daily_results");
+    gr.get(jelly.jvar_rid);
+    if(gr.isValidRecord()){
+    var results = gr.getValue("game_data");
+    }
+  </g:evaluate>
+
+  <div id="results" style="display:none">${results}</div>
+  <div id="container">
+    <div id="showit"></div>
+  </div>
+
+  <style>
+    #container {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    #showit {
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+    }
+
+    #page_timing_div {
+      display: none;
+    }
+  </style>
+</j:jelly>]]></html>
+        <name>GTW_UserGameResult</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-06 07:55:46</sys_created_on>
+        <sys_id>ef61cbbc2fe981102e98f5ecf699b636</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>GTW_UserGameResult</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ui_page_ef61cbbc2fe981102e98f5ecf699b636</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-02-06 09:50:39</sys_updated_on>
+    </sys_ui_page>
+</record_update>

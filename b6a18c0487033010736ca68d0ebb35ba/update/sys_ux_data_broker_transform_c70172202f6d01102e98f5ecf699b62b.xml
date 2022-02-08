@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_317911_us_telc_0.Word Utils</api_name>
+        <description>This broker takes a word from you and says if it exists in a predefined list of words</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Word Utils</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "word",&#13;
+    "label": "Word",&#13;
+    "description": "Word to look for",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "user",&#13;
+    "label": "User",&#13;
+    "description": "User Sys ID",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "operation",&#13;
+    "label": "Operation",&#13;
+    "description": "",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": "",&#13;
+    "typeMetadata": {&#13;
+      "choices": [&#13;
+        { "label": "Check Word", "value": "1" },&#13;
+        { "label": "Fetch Prime Word", "value": "2" },&#13;
+        { "label": "Fetch Daily Result", "value": "3" },&#13;
+        { "label": "Fetch Stats", "value": "4" }&#13;
+      ]&#13;
+    }&#13;
+  }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Operation",
+  "comment" : ""
+}, {
+  "message" : "User",
+  "comment" : ""
+}, {
+  "message" : "User Sys ID",
+  "comment" : ""
+}, {
+  "message" : "Word",
+  "comment" : ""
+}, {
+  "message" : "Word to look for",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+
+  var wordsList = new GlideRecord("x_317911_us_telc_0_words");
+  switch (input.operation) {
+    case "1": {
+      wordsList.get("words", input.word);
+      if (wordsList.isValidRecord()) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    case "2": {
+      wordsList.initialize();
+      wordsList.addQuery("is_prime", true);
+      wordsList.setLimit(1);
+      wordsList.query();
+      wordsList.next();
+      if (wordsList.isValidRecord()) {
+        return wordsList.getValue("words");
+      } else {
+        return "";
+      }
+    }
+    case "3": {
+      var dailyResult = new GlideRecord("x_317911_us_telc_0_daily_results");
+      dailyResult.addEncodedQuery("user=" + input.user + "^ORDERBYDESCsys_created_on");
+      dailyResult.setLimit(1);
+      dailyResult.query();
+      dailyResult.next();
+      if (dailyResult.isValidRecord()) {
+        return {
+          "sys_id": dailyResult.getUniqueValue(),
+          "words": dailyResult.getValue("words"),
+          "pattern": dailyResult.getValue("pattern")
+        };
+      } else {
+        return false;
+      }
+    }
+    case "4": {
+      var stats = new GlideRecord("x_317911_us_telc_0_user_stats");
+      stats.get("user", input.user);
+      if (stats.isValidRecord()) {
+        return {
+          "total_games": stats.getValue("total_games_played"),
+          "win_percent": stats.getValue("win_percent"),
+          "current_streak": stats.getValue("current_streak"),
+          "max_streak": stats.getValue("max_streak"),
+          "sys_id": stats.getUniqueValue()
+        };
+      } else {
+        return false;
+      }
+    }
+  }
+
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-05 11:56:11</sys_created_on>
+        <sys_id>c70172202f6d01102e98f5ecf699b62b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Word Utils</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_c70172202f6d01102e98f5ecf699b62b</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-02-07 06:36:09</sys_updated_on>
+    </sys_ux_data_broker_transform>
+</record_update>
