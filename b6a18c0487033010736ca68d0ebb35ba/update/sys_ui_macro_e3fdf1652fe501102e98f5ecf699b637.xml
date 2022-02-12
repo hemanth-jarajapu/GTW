@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>GTW_UserStats</name>
+        <scoped_name>x_317911_us_telc_0_GTW_UserStats</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-08 11:56:09</sys_created_on>
+        <sys_id>e3fdf1652fe501102e98f5ecf699b637</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>GTW_UserStats</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ui_macro_e3fdf1652fe501102e98f5ecf699b637</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-02-11 10:52:40</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <html>
+
+    <body>
+        <div id="statistics">
+            <div class="statistic-container">
+				<div class="label">Played</div>
+                <div class="statistic">${totalGames}</div>
+            </div>
+
+            <div class="statistic-container">
+				<div class="label">Win %</div>
+                <div class="statistic">${winPercent}</div>
+            </div>
+
+            <div class="statistic-container">
+				<div class="label">Current Streak</div>
+                <div class="statistic">${currentStreak}</div>
+            </div>
+
+            <div class="statistic-container">
+				<div class="label">Max Streak</div>
+                <div class="statistic">${maxStreak}</div>
+            </div>
+        </div>
+    </body>
+
+    <style>
+		.statistic{
+		  text-align: center;
+		  margin-top: 15px;
+		  font-weight: 600;
+		  color: #454545;
+		  font-size: 16px;
+		}
+		.label{
+			font-size: 16px;
+			border-radius: 10px
+			color: #171717;
+		}
+        #statistics {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        #statistic-container {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+    </style>
+
+    </html>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

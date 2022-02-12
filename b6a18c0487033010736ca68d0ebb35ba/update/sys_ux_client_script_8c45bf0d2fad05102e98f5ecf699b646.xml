@@ -44,13 +44,13 @@ function handler({
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2022-02-07 05:42:41</sys_created_on>
         <sys_id>8c45bf0d2fad05102e98f5ecf699b646</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Initial Setup</sys_name>
         <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_client_script_8c45bf0d2fad05102e98f5ecf699b646</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-07 07:51:40</sys_updated_on>
+        <sys_updated_on>2022-02-09 07:52:01</sys_updated_on>
     </sys_ux_client_script>
 </record_update>

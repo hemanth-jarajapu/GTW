@@ -286,7 +286,6 @@
 } ]</event_mappings>
         <macroponent display_value="Landing Page">6392a25f93950110f7c4266351e85b43</macroponent>
         <macroponent_config>{
-  "gtwResultDisplayPage" : "https://dev79354.service-now.com/x_317911_us_telc_0_GTW_UserGameResult",
   "label" : "",
   "bare" : true,
   "scrollable" : "none",
@@ -305,7 +304,7 @@
         <sys_created_on>2022-02-01 13:12:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e792a25f149501107ddd299f1596e741</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Landing Page Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
@@ -313,6 +312,6 @@
         <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_screen_e792a25f149501107ddd299f1596e741</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-06 11:51:17</sys_updated_on>
+        <sys_updated_on>2022-02-08 09:29:27</sys_updated_on>
     </sys_ux_screen>
 </record_update>

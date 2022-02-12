@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_317911_us_telc_0_GTW_UserGameStats.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:evaluate var="jvar_stats" expression="RP.getParameterValue('sysparm_stats')" jelly="true" />
+
+    <g:evaluate jelly="true">
+		if(jelly.jvar_stats){
+			var stats = JSON.parse(jelly.jvar_stats);
+			var totalGames = stats.total_games;
+			var winPercent = stats.win_percent;
+			var currentStreak = stats.current_streak;
+			var maxStreak = stats.max_streak;
+		}
+    </g:evaluate>
+	
+	<div id="statsGroup">
+        <g:macro_invoke macro="x_317911_us_telc_0_GTW_UserStats" />
+    </div>
+	
+	<style>
+		 #page_timing_div {
+            display: none;
+        }
+		body {
+            height: fit-content;
+        }
+	</style>
+	
+</j:jelly>]]></html>
+        <name>GTW_UserGameStats</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-09 06:06:37</sys_created_on>
+        <sys_id>df7d06f92f2101102e98f5ecf699b670</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>GTW_UserGameStats</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ui_page_df7d06f92f2101102e98f5ecf699b670</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-02-09 06:55:56</sys_updated_on>
+    </sys_ui_page>
+</record_update>
