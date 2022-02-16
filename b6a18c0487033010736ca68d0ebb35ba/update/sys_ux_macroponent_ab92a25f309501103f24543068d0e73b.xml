@@ -69,7 +69,7 @@
       "propertyValues" : {
         "html" : {
           "type" : "JSON_LITERAL",
-          "value" : "&lt;p style=\"font-size: 18.6667px;\"&gt;&lt;span style=\"font-size: 48px;\"&gt;&lt;strong&gt;Ready To Guess The Word?&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;"
+          "value" : "&lt;p style=\"font-size: 18.6667px;\"&gt;&lt;span style=\"font-size: 48px;\"&gt;&lt;strong&gt;&lt;span style=\"color: #000000;\"&gt;Ready To Guess The Word?&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;"
         }
       },
       "eventMappings" : [ ],
@@ -111,7 +111,7 @@
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"default-slot","styles":{"margin-top":"16vh","margin-left":"9vw"}}],
+        "items" : [{"slotName":"default-slot","styles":{"margin-top":"20vh","margin-left":"9vw"}}],
         "root" : null,
         "rules" : {"flex-direction":"column"},
         "styles" : null,
@@ -240,10 +240,10 @@
         <layout>{
   "default" : {
     "children" : null,
-    "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"background-color":"rgb(var(--now-color_grouped--blue-1))","background-position":"80% 80%","background-repeat":"no-repeat","background-size":"827px 465px","background-image":"url(custom_portal_login.svg)"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"padding-top":"9rem"}}],
+    "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"background-color":"#aecbdc","background-position":"80% 80%","background-repeat":"no-repeat","background-size":"827px 465px","background-image":"url(custom_portal_login.svg)"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"padding-top":"9rem"}}],
     "root" : null,
     "rules" : {"grid-template-rows":"minmax(600px,auto)","grid-template-columns":"2fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"2rem","height":"100%"},
-    "styles" : null,
+    "styles" : {"background-color":"#d2e9ff"},
     "templateId" : "8374fc8153831010e6bcddeeff7b1267",
     "type" : "grid"
   }
@@ -267,13 +267,13 @@
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-02-01 13:12:23</sys_created_on>
         <sys_id>ab92a25f309501103f24543068d0e73b</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Login</sys_name>
         <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_macroponent_ab92a25f309501103f24543068d0e73b</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-06 05:44:27</sys_updated_on>
+        <sys_updated_on>2022-02-16 08:25:01</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
