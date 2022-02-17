@@ -5976,110 +5976,6 @@
           },
           "isNonDestructive" : false,
           "styles" : { }
-        }, {
-          "elementId" : "input_31",
-          "elementLabel" : "Input 31",
-          "propertyValues" : {
-            "type" : {
-              "type" : "JSON_LITERAL",
-              "value" : "text"
-            },
-            "label" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "Label",
-                "comment" : ""
-              }
-            },
-            "placeholder" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "name" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "value" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "hyper",
-                "comment" : ""
-              }
-            },
-            "readonly" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "required" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "hideRequiredIndicator" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "optional" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "min" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "max" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "minlength" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "maxlength" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "multiple" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "pattern" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "autofocus" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "disabled" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "invalid" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "helperContent" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            },
-            "messages" : {
-              "type" : "LIST_CONTAINER",
-              "container" : [ ]
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Main",
-          "definition" : {
-            "id" : "bb0f92e8d7eff1590624bfe69d316f23",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : ""
-          },
-          "isNonDestructive" : false,
-          "styles" : { }
         } ],
         "layout" : {
           "default" : {
@@ -6185,34 +6081,6 @@
       "event" : {
         "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
         "payload" : {
-          "type" : "CLIENT_TRANSFORM_SCRIPT",
-          "script" : {
-            "apiVersion" : "1.0.0",
-            "inlineScript" : "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n* @param {any} params.imports\n*/\nfunction evaluateEvent({api, event}) {\n\treturn {\n\t\tpropName: \"patternURL\",\n\t\tvalue: api.data.fetch_instance_url.output + \"x_317911_us_telc_0_GTW_UserGameResult?sysparm_rid=\" + event.payload.data.output\n\t};\n}"
-          }
-        },
-        "sysId" : "32408b42ff7a10109046e490703bf176"
-      },
-      "operation" : null,
-      "targetId" : "ckzjgbpmoaaaabbpddphhvroseejjiite",
-      "type" : "EVENT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "5f41fcc92f29c1102e98f5ecf699b610"
-      },
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "ckzjgjilmaaaaddaaddphhveeqhhpddehhj",
-      "type" : "CLIENT_SCRIPT"
-    }, {
-      "broker" : null,
-      "clientScript" : null,
-      "declarativeAction" : null,
-      "event" : {
-        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-        "payload" : {
           "type" : "MAP_CONTAINER",
           "container" : {
             "propName" : {
@@ -6232,16 +6100,6 @@
       "operation" : null,
       "targetId" : "ckzjhbypiiaaaahhjddphhvtelccxjyk",
       "type" : "EVENT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "8d53a85c2fa101102e98f5ecf699b649"
-      },
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "ckzjhfaapqaaaahhyddphhvojjiitfdjjo",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : { },
@@ -6472,6 +6330,65 @@
   "elementId" : "update_record",
   "elementLabel" : "Update Record",
   "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "definition" : {
+    "id" : "f3cbac412f29c1102e98f5ecf699b634",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "update_results_record",
+  "elementLabel" : "Update Results Record",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "definition" : {
+    "id" : "f3cbac412f29c1102e98f5ecf699b634",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "final_result_update",
+  "elementLabel" : "Final Result Update",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckzqqzeeyfaaaahhgddphhvxgkpshfc",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "5f41fcc92f29c1102e98f5ecf699b610"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckzqqzeeyfaaaahhhddphhvjggreejffxm",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : {
+        "dataBrokerId" : "c70172202f6d01102e98f5ecf699b62b",
+        "operationName" : "REFRESH",
+        "parentResourceId" : "fetch_user_stats",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : { }
+        }
+      },
+      "targetId" : "ckzqrakqffaaaahhxddphhvmbbraawtqr",
+      "type" : "DATABROKER_OP"
+    } ]
+  } ],
   "inputValues" : { },
   "readEvaluationMode" : "EXPLICIT"
 } ]</data>
@@ -6789,16 +6706,10 @@
   "message" : "Check",
   "comment" : ""
 }, {
-  "message" : "Label",
-  "comment" : ""
-}, {
   "message" : "No content to display",
   "comment" : ""
 }, {
   "message" : "Post to Hub",
-  "comment" : ""
-}, {
-  "message" : "hyper",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -7089,13 +7000,13 @@
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-02-01 13:12:22</sys_created_on>
         <sys_id>6392a25f93950110f7c4266351e85b43</sys_id>
-        <sys_mod_count>473</sys_mod_count>
+        <sys_mod_count>483</sys_mod_count>
         <sys_name>Landing Page</sys_name>
         <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_macroponent_6392a25f93950110f7c4266351e85b43</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-16 07:25:29</sys_updated_on>
+        <sys_updated_on>2022-02-17 09:03:57</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

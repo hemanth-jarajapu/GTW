@@ -11,7 +11,12 @@
  * @param {any} params.imports
  * @param {ApiHelpers} params.helpers
  */
-function handler({api,event,helpers,imports}) {
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
     var row = parseInt(api.state.currentRow);
     var attributes = api.state.attributes;
     var primeWord = api.data.prime_word.output;
@@ -95,36 +100,54 @@ function handler({api,event,helpers,imports}) {
             }
         }
 
-        if (attemptComplete || (row == 6)) {
-            attributes["row" + row].last = true;
-            var gamePattern = gtwUtils.getGameAttemptPattern(attributes);
-            var words = [];
-            var pattern = [];
-            var inputs = api.state.inputs;
-            for(var m = 1; m < 7; m++){
-                if(inputs["row" + m].c1){
-                    words.push(inputs["row" + m].c1+inputs["row" + m].c2+inputs["row" + m].c3+inputs["row" + m].c4+inputs["row" + m].c5);
-                    for(var n = 1; n < 6; n++){
-                        pattern.push(attributes["row" + m]["c" + n].hint[0].status);
-                    }
+        var gamePattern = "";
+        var words = [];
+        var pattern = [];
+        var inputs = api.state.inputs;
+        for (var m = 1; m < 7; m++) {
+            if (inputs["row" + m].c1) {
+                words.push(inputs["row" + m].c1 + inputs["row" + m].c2 + inputs["row" + m].c3 + inputs["row" + m].c4 + inputs["row" + m].c5);
+                for (var n = 1; n < 6; n++) {
+                    pattern.push(attributes["row" + m]["c" + n].hint[0].status);
                 }
             }
-            words = words.join();
-            pattern = pattern.join();
+        }
+        words = words.join();
+        pattern = pattern.join();
+
+        if ((row < 6) & !attemptComplete) {
             var data = {
-                "user": api.context.session.user.sys_id,
+                "record_id": api.state.dailyResultsRecID,
                 "tries": row,
                 "pass": attemptComplete,
                 "words": words,
                 "pattern": pattern,
                 "game_data": gamePattern
             };
-            api.data.create_results_record.execute({
-                operation: "1",
+            api.data.update_results_record.execute({
+                operation: "2",
+                data: JSON.stringify(data)
+            });
+        }
+
+        if (attemptComplete || (row == 6)) {
+            attributes["row" + row].last = true;
+            gamePattern = gtwUtils.getGameAttemptPattern(attributes);
+            var data = {
+                "record_id": api.state.dailyResultsRecID,
+                "tries": row,
+                "pass": attemptComplete,
+                "words": words,
+                "pattern": pattern,
+                "game_data": gamePattern
+            };
+            api.data.final_result_update.execute({
+                operation: "2",
                 data: JSON.stringify(data)
             });
             api.setState("disableCheck", true);
-            if(!attemptComplete){
+            api.setState("patternURL", api.data.fetch_instance_url.output + "x_317911_us_telc_0_GTW_UserGameResult?sysparm_rid=" + api.state.dailyResultsRecID);
+            if (!attemptComplete) {
                 api.setState("appreciation", "It's Okay!");
                 api.setState("disablePost", true);
             }
@@ -146,13 +169,13 @@ function handler({api,event,helpers,imports}) {
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2022-02-05 13:59:15</sys_created_on>
         <sys_id>12b353602f6141102e98f5ecf699b610</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>Check User Word</sys_name>
         <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_client_script_12b353602f6141102e98f5ecf699b610</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-12 06:19:07</sys_updated_on>
+        <sys_updated_on>2022-02-17 08:55:34</sys_updated_on>
     </sys_ux_client_script>
 </record_update>

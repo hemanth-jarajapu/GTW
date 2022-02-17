@@ -3,9 +3,103 @@
         <associated_types/>
         <category>page</category>
         <component_dependencies/>
-        <composition>[ ]</composition>
+        <composition>[ {
+  "elementId" : "iframe_1",
+  "elementLabel" : "iFrame 1",
+  "propertyValues" : {
+    "title" : {
+      "type" : "JSON_LITERAL",
+      "value" : "User Profile"
+    },
+    "src" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "profileURL" ]
+      }
+    },
+    "width" : {
+      "type" : "JSON_LITERAL",
+      "value" : "100%"
+    },
+    "height" : {
+      "type" : "JSON_LITERAL",
+      "value" : "100%"
+    },
+    "disableSandbox" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "2eda8d95aae6d05a26d94fbf692ac6f9",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
         <da_relay_models/>
-        <data>[ ]</data>
+        <data>[ {
+  "definition" : {
+    "id" : "c70172202f6d01102e98f5ecf699b62b",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "get_instance_url",
+  "elementLabel" : "Get Instance URL",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckzpkntffffaaaacccddphhvmiraggofv",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+        "payload" : {
+          "type" : "CLIENT_TRANSFORM_SCRIPT",
+          "script" : {
+            "apiVersion" : "1.0.0",
+            "inlineScript" : "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n* @param {any} params.imports\n*/\nfunction evaluateEvent({api, event}) {\n\treturn {\n\t\tpropName: \"profileURL\",\n\t\tvalue: api.data.get_instance_url.output + \"sys_user.do?sys_id=\" + api.context.session.user.sys_id + \"&amp;sysparm_view=gtw\"\n\t};\n}"
+          }
+        },
+        "sysId" : "32408b42ff7a10109046e490703bf176"
+      },
+      "operation" : null,
+      "targetId" : "ckzpkntffffaaaaccdddphhveehcjyuln",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "inputValues" : {
+    "word" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "user" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "operation" : {
+      "type" : "JSON_LITERAL",
+      "value" : "5"
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
         <dispatched_events/>
         <events/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
@@ -16,7 +110,7 @@
         <layout>{
   "default" : {
     "children" : null,
-    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column","height":"100%"}}],
     "root" : null,
     "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
     "styles" : null,
@@ -32,18 +126,29 @@
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties>[ ]</state_properties>
+        <state_properties>[ {
+  "name" : "profileURL",
+  "label" : "profileURL",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+} ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2022-02-09 15:35:14</sys_created_on>
         <sys_id>2300504a2fed01102e98f5ecf699b6f5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Profile</sys_name>
         <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
         <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_macroponent_2300504a2fed01102e98f5ecf699b6f5</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-09 17:37:20</sys_updated_on>
+        <sys_updated_on>2022-02-17 06:05:37</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
