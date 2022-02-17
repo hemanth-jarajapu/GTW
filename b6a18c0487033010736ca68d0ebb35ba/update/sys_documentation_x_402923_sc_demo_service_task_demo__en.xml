@@ -11,12 +11,12 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-02-08 06:46:50</sys_created_on>
-            <sys_id>a18d05a52f6101102e98f5ecf699b623</sys_id>
+            <sys_id>8d909a772ff7201035053f96f699b6d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Service Task Demo</sys_name>
-            <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+            <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
             <sys_policy/>
-            <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+            <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
             <sys_update_name>sys_documentation_x_402923_sc_demo_service_task_demo__en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2022-02-08 06:46:50</sys_updated_on>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
-        <access/>
+        <access>public</access>
         <actions_access>false</actions_access>
         <alter_access>false</alter_access>
         <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>true</create_access>
+        <create_access>false</create_access>
         <create_access_controls>false</create_access_controls>
-        <delete_access>true</delete_access>
+        <delete_access>false</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
         <label>User Acti Req 443681</label>
@@ -18,23 +18,23 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="User Activation Request" name="user_activation_request">782459982f2901102e98f5ecf699b627</super_class>
+        <super_class/>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>
-        <sys_created_by>hemanth.jarajapu</sys_created_by>
-        <sys_created_on>2022-02-04 10:27:58</sys_created_on>
-        <sys_id>21c9d9182f6901102e98f5ecf699b6ad</sys_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-08 07:58:20</sys_created_on>
+        <sys_id>f0eddd25dbe10110883c68d35b9619d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>User Acti Req 443681</sys_name>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_name>u_user_acti_req_443681</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
-        <sys_update_name>sys_db_object_21c9d9182f6901102e98f5ecf699b6ad</sys_update_name>
-        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-04 10:27:58</sys_updated_on>
-        <update_access>true</update_access>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_db_object_f0eddd25dbe10110883c68d35b9619d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 07:58:20</sys_updated_on>
+        <update_access>false</update_access>
         <user_role/>
-        <ws_access>false</ws_access>
+        <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>
