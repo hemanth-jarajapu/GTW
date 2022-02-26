@@ -29,15 +29,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-10-02 02:47:34</sys_created_on>
         <sys_id>b6a18c0487033010736ca68d0ebb35ba</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-18 06:58:46</sys_updated_on>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-26 07:59:06</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>2.2.0</version>
+        <version>2.5.0</version>
     </sys_app>
 </record_update>
