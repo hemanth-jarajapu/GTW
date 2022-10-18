@@ -10,7 +10,7 @@
     // Add your code here
     var gdt = new GlideDateTime();
     var gdtv = gdt.getNumericValue();
-    var cdt = new GlideDateTime(current.getValue("sys_created_on"));
+    var cdt = new GlideDateTime(current.getValue("sys_updated_on"));
     var cdtv = cdt.getNumericValue();
 
     var duration = parseInt((gdtv - cdtv) / (1000 * 60));
@@ -73,14 +73,14 @@
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2022-02-06 06:42:13</sys_created_on>
         <sys_id>451436b42fa981102e98f5ecf699b614</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Played</sys_name>
-        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_dictionary_x_317911_us_telc_0_daily_results_played</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-08 07:58:18</sys_updated_on>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-01 15:54:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

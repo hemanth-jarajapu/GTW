@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>User Profile default Agent assist</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-21 08:41:43</sys_created_on>
+        <sys_id>0001703a2f9681102e98f5ecf699b6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Profile default Agent assist</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_screen_type_0001703a2f9681102e98f5ecf699b6c8</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-21 08:41:43</sys_updated_on>
+    </sys_ux_screen_type>
+</record_update>

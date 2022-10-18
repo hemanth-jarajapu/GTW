@@ -63,76 +63,86 @@
         <schema_version>1.0.0</schema_version>
         <script><![CDATA[function transform(input) {
 
-  var wordsList = new GlideRecord("x_317911_us_telc_0_words");
-  switch (input.operation) {
-    case "1": {
-      wordsList.get("words", input.word);
-      if (wordsList.isValidRecord()) {
-        return true;
-      } else {
-        return false;
-      }
+    var wordsList = new GlideRecord("x_317911_us_telc_0_words");
+    switch (input.operation) {
+        case "1":
+            {
+                wordsList.get("words", input.word);
+                if (wordsList.isValidRecord()) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        case "2":
+            {
+                wordsList.initialize();
+                wordsList.addQuery("is_prime=true^is_ex_prime=false");
+                wordsList.setLimit(1);
+                wordsList.query();
+                wordsList.next();
+                if (wordsList.isValidRecord()) {
+                    return wordsList.getValue("words");
+                } else {
+                    return "";
+                }
+            }
+        case "3":
+            {
+                var dailyResult = new GlideRecord("x_317911_us_telc_0_daily_results");
+                dailyResult.addEncodedQuery("user=" + input.user + "^sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()");
+                dailyResult.setLimit(1);
+                dailyResult.query();
+                dailyResult.next();
+                if (dailyResult.isValidRecord()) {
+                    var gameOver = false;
+                    if (dailyResult.game_data) {
+                        gameOver = true;
+                    }
+                    return {
+                        "sys_id": dailyResult.getUniqueValue(),
+                        "words": dailyResult.getValue("words"),
+                        "pattern": dailyResult.getValue("pattern"),
+						"game_over": gameOver
+                    };
+                } else {
+                    return false;
+                }
+            }
+        case "4":
+            {
+                var stats = new GlideRecord("x_317911_us_telc_0_user_stats");
+                stats.get("user", input.user);
+                if (stats.isValidRecord()) {
+                    return {
+                        "total_games": stats.getValue("total_games_played"),
+                        "win_percent": stats.getValue("win_percent"),
+                        "current_streak": stats.getValue("current_streak"),
+                        "max_streak": stats.getValue("max_streak"),
+                        "sys_id": stats.getUniqueValue()
+                    };
+                } else {
+                    return false;
+                }
+            }
+        case "5":
+            {
+                return gs.getProperty("glide.servlet.uri");
+            }
     }
-    case "2": {
-      wordsList.initialize();
-      wordsList.addQuery("is_prime=true^is_ex_prime=false");
-      wordsList.setLimit(1);
-      wordsList.query();
-      wordsList.next();
-      if (wordsList.isValidRecord()) {
-        return wordsList.getValue("words");
-      } else {
-        return "";
-      }
-    }
-    case "3": {
-      var dailyResult = new GlideRecord("x_317911_us_telc_0_daily_results");
-      dailyResult.addEncodedQuery("user=" + input.user + "^sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()");
-      dailyResult.setLimit(1);
-      dailyResult.query();
-      dailyResult.next();
-      if (dailyResult.isValidRecord()) {
-        return {
-          "sys_id": dailyResult.getUniqueValue(),
-          "words": dailyResult.getValue("words"),
-          "pattern": dailyResult.getValue("pattern")
-        };
-      } else {
-        return false;
-      }
-    }
-    case "4": {
-      var stats = new GlideRecord("x_317911_us_telc_0_user_stats");
-      stats.get("user", input.user);
-      if (stats.isValidRecord()) {
-        return {
-          "total_games": stats.getValue("total_games_played"),
-          "win_percent": stats.getValue("win_percent"),
-          "current_streak": stats.getValue("current_streak"),
-          "max_streak": stats.getValue("max_streak"),
-          "sys_id": stats.getUniqueValue()
-        };
-      } else {
-        return false;
-      }
-    }
-    case "5": {
-      return gs.getProperty("glide.servlet.uri");
-    }
-  }
 
 }]]></script>
         <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2022-02-05 11:56:11</sys_created_on>
         <sys_id>c70172202f6d01102e98f5ecf699b62b</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Word Utils</sys_name>
-        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_data_broker_transform_c70172202f6d01102e98f5ecf699b62b</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-11 10:57:55</sys_updated_on>
+        <sys_updated_on>2022-03-01 16:06:15</sys_updated_on>
     </sys_ux_data_broker_transform>
 </record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record">89f0bcf62f9681102e98f5ecf699b6b4</macroponent>
+        <name>showOnloadAlerts</name>
+        <required_translations/>
+        <script><![CDATA[function handler({api,event,imports}) {
+  var paramsString = api.context.props.extraParams,
+    paramsObj = paramsString?.split('/'),
+    alerts;
+
+  if (!paramsObj || !paramsObj.length || (paramsObj.indexOf('alerts') < 0)) return;
+
+  alerts = paramsObj[paramsObj.indexOf('alerts') + 1];
+  try {
+    alerts = JSON.parse(alerts);
+  } catch(e) {}
+
+  if (!alerts)
+    return;
+  if (typeof alerts == 'string') {
+    alerts = [{
+      id: "record-alert-1",
+      status: "info",
+      icon: "info-circle-outline",
+      content: alerts,
+      action: {
+        type: "dismiss"
+      }
+    }];
+  }
+  api.emit('NOW_UXF_PAGE#ADD_NOTIFICATIONS', {
+    items: alerts
+  });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-21 08:41:37</sys_created_on>
+        <sys_id>6ef0303a2f9681102e98f5ecf699b64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>showOnloadAlerts</sys_name>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_client_script_6ef0303a2f9681102e98f5ecf699b64a</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-21 08:41:37</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -18,6 +18,7 @@
         <order>0</order>
         <parent_macroponent display_value="Record Page(task)">6792a25f0795011065b825ab6cb94c31</parent_macroponent>
         <required_translations>[]</required_translations>
+        <rollback_screen/>
         <screen_condition/>
         <screen_type display_value="Additional Details">af92a25f57950110e2b4a24fefcb3f33</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
@@ -28,9 +29,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Additional Details Default</sys_name>
         <sys_overrides/>
-        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_screen_2792a25f299501100284abb54124ec3e</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2022-02-01 13:12:23</sys_updated_on>
