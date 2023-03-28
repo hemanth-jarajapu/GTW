@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-08 07:58:39</sys_created_on>
+        <sys_id>91fd5965dbe10110883c68d35b961964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>69bf597b2f0001102e98f5ecf699b6ef.snc_internal</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_security_acl display_value="69bf597b2f0001102e98f5ecf699b6ef">06bf997ba0000110934fa27a72a8d940</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_91fd5965dbe10110883c68d35b961964</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 07:58:39</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>27cd1925dbe10110883c68d35b9619b8</transaction_id>
+    </sys_security_acl_role>
+</record_update>

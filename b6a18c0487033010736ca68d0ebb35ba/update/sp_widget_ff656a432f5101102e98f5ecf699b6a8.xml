@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.main-container {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.grid-content {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>word_game_screen</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>word_game_screen</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-31 18:46:08</sys_created_on>
+        <sys_id>ff656a432f5101102e98f5ecf699b6a8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>word_game_screen</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sp_widget_ff656a432f5101102e98f5ecf699b6a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-01 12:59:11</sys_updated_on>
+        <template><![CDATA[<div class="main-container">
+    <!-- your widget template -->
+    <div id="grid-content">
+        <input type="text" id="first_attempt_first_letter" name="first_attempt_first_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="first_attempt_second_letter" name="first_attempt_second_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="first_attempt_third_letter" name="first_attempt_third_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="first_attempt_fourth_letter" name="first_attempt_fourth_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="first_attempt_fifth_letter" name="first_attempt_fifth_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <br> <br>
+        <input type="text" id="second_attempt_first_letter" name="second_attempt_first_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="second_attempt_second_letter" name="second_attempt_second_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="second_attempt_third_letter" name="second_attempt_third_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="second_attempt_fourth_letter" name="second_attempt_fourth_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <input type="text" id="second_attempt_fifth_letter" name="second_attempt_fifth_letter" maxlength="1"
+            style="width: 18px; text-transform: uppercase;">
+        <div id="check_btn">
+            <input type="button" id="first_attempt_check" name="first_attempt_check" value="Check">
+        </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

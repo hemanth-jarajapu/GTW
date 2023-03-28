@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_environment">
+    <sn_pipeline_environment action="INSERT_OR_UPDATE">
+        <instance_credential display_value="x_317911_us_telc_0.hemanth_instance_creds">2bd79d2d2fa101102e98f5ecf699b622</instance_credential>
+        <instance_id>Validation Failed: Please check the URL and credentials</instance_id>
+        <instance_type>staging</instance_type>
+        <instance_url>https://dev88383.service-now.com/</instance_url>
+        <is_controller>true</is_controller>
+        <name>Staging</name>
+        <sys_class_name>sn_pipeline_environment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-08 07:33:31</sys_created_on>
+        <sys_id>87b795e92fa101102e98f5ecf699b655</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>Staging</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sn_pipeline_environment_87b795e92fa101102e98f5ecf699b655</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-03-27 07:20:49</sys_updated_on>
+    </sn_pipeline_environment>
+</record_update>

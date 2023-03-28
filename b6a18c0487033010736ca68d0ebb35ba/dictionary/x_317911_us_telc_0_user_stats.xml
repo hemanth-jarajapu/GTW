@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ab07dd902f6901102e98f5ecf699b621" label="User Stats" max_length="40" name="x_317911_us_telc_0_user_stats" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Current Streak" max_length="40" name="current_streak" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Max Streak" max_length="40" name="max_streak" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Games Played" max_length="40" name="total_games_played" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Games Won" max_length="40" name="total_games_won" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference" unique="true"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;    return parseInt((current.getValue(&quot;total_games_won&quot;) / current.getValue(&quot;total_games_played&quot;)) * 100);&#10;&#10;})(current);" label="Win %" max_length="40" name="win_percent" type="integer" virtual="true"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

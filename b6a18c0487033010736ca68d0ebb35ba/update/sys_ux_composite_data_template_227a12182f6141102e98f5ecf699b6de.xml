@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template">
+    <sys_ux_composite_data_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>Guess The Word Results VT</name>
+        <sys_class_name>sys_ux_composite_data_template</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-02-04 15:10:53</sys_created_on>
+        <sys_id>227a12182f6141102e98f5ecf699b6de</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name>Guess The Word Results VT</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_227a12182f6141102e98f5ecf699b6de</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-08 06:55:35</sys_updated_on>
+        <template>{&#13;
+	"component": "now-card-evam-content",&#13;
+	"staticValues": {&#13;
+		"highlightedHeaderBkgColor": {&#13;
+			"translatable": false,&#13;
+			"key": "moderate"&#13;
+		},&#13;
+		"imageType": {&#13;
+			"translatable": false,&#13;
+			"key": "avatar"&#13;
+		},&#13;
+		"detailLabelOne": {&#13;
+			"translatable": true,&#13;
+			"key": "Posted:"&#13;
+		},&#13;
+		"detailLabelTwo": {&#13;
+			"translatable": true,&#13;
+			"key": "Tries: "&#13;
+		}&#13;
+	},&#13;
+	"mappings": {&#13;
+        "textHeaderLabel": "user.name",&#13;
+		"avatarName": "user",&#13;
+        "avatarURL": "user.avatar",&#13;
+		"detailValueOne": "played",&#13;
+		"detailValueTwo": "tries"&#13;
+	}&#13;
+}</template>
+    </sys_ux_composite_data_template>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_pipeline_environment_order">
+    <sn_pipeline_pipeline_environment_order action="INSERT_OR_UPDATE">
+        <environment display_value="Staging">87b795e92fa101102e98f5ecf699b655</environment>
+        <order>10</order>
+        <pipeline display_value="Test Pipeline">f28611e52fa101102e98f5ecf699b6ba</pipeline>
+        <sys_class_name>sn_pipeline_pipeline_environment_order</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-08 07:37:33</sys_created_on>
+        <sys_id>1919ddad2fa101102e98f5ecf699b6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sn_pipeline_pipeline_environment_order_1919ddad2fa101102e98f5ecf699b6d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 07:37:33</sys_updated_on>
+    </sn_pipeline_pipeline_environment_order>
+</record_update>

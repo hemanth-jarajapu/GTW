@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9032cd082f6d01102e98f5ecf699b6f2" label="Words" max_length="40" name="x_317911_us_telc_0_words" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Is Ex-Prime" max_length="40" name="is_ex_prime" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Is Prime" max_length="40" name="is_prime" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Words" max_length="40" name="words" read_only="true" type="string" unique="true"/>
+        <index name="index" unique="true">
+            <element name="words"/>
+        </index>
+    </element>
+</database>

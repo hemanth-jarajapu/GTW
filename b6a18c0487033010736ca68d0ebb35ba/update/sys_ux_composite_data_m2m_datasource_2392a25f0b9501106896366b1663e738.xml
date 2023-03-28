@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Tasks Dataset">e392a25f2e950110f7b89d92de220e37</dataset>
+        <datasource display_value="Custom Portal Landing - My Tasks Datasource (Task table)">e792a25f2f9501107867077195231237</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-02-01 13:12:25</sys_created_on>
+        <sys_id>2392a25f0b9501106896366b1663e738</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_2392a25f0b9501106896366b1663e738</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-02-01 13:12:25</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_environment">
+    <sn_pipeline_environment action="INSERT_OR_UPDATE">
+        <instance_credential display_value="x_317911_us_telc_0.this_instance">47c815ad2fa101102e98f5ecf699b6f6</instance_credential>
+        <instance_id>Validation Failed: Failure code:401</instance_id>
+        <instance_type>dev</instance_type>
+        <instance_url>https://dev79354.service-now.com/</instance_url>
+        <is_controller>false</is_controller>
+        <name>This Instance</name>
+        <sys_class_name>sn_pipeline_environment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-08 07:37:00</sys_created_on>
+        <sys_id>c79815e92fa101102e98f5ecf699b620</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>This Instance</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sn_pipeline_environment_c79815e92fa101102e98f5ecf699b620</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-03-20 06:55:59</sys_updated_on>
+    </sn_pipeline_environment>
+</record_update>

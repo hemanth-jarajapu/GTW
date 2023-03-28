@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "cbb1cedf2fb101102e98f5ecf699b6ea_Main",
+  "elementLabel" : "Main",
+  "propertyValues" : {
+    "ariaRegionName" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "",
+        "comment" : ""
+      }
+    },
+    "ariaRegionHeadingLevel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "knowledge_content_1",
+      "elementLabel" : "Knowledge content 1",
+      "propertyValues" : {
+        "articleDetails" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "articleHTML" : "&lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&lt;span style='font-size: 14px;'&gt;&lt;span style='font-size: 18pt; font-family: arial, helvetica, sans-serif;'&gt;&lt;strong&gt;GUESS THE WORD&lt;/strong&gt;&lt;/span&gt; &lt;span style='font-size: 14pt;'&gt;in &lt;/span&gt;&lt;/span&gt;&lt;span style='font-size: 12pt;'&gt;&lt;span style='font-size: 14pt;'&gt;&lt;span style='text-decoration: underline;'&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;/span&gt; tries&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt; &lt;ul style='list-style-position: inside;'&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;&lt;span style='font-size: 12pt;'&gt;A unique word will be available each day! &lt;/span&gt;&lt;/li&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;&lt;span style='font-size: 12pt;'&gt;Each guess must be a valid five-letter word.&lt;/span&gt;&lt;/li&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;&lt;span style='font-size: 12pt;'&gt;Click Tab key to go to the next cell after filling a cell or use the mouse pointer to focus the cell to be filled&lt;/span&gt;&lt;/li&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;&lt;span style='font-size: 12pt;'&gt;Hit the &lt;strong&gt;Check&lt;/strong&gt;&amp;nbsp;button on your screen to submit.&lt;/span&gt;&lt;/li&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;&lt;span style='font-size: 12pt;'&gt;After each guess, the color of the tiles will change to show how close your guess was to the actual word.&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;table style='width: 100%; border-collapse: collapse; border-style: none; background-color: #d4d4d4; margin-left: auto; margin-right: auto;'&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style='width: 33.3333%;'&gt; &lt;p&gt;&lt;span style='font-size: 12pt;'&gt;&amp;nbsp; &amp;nbsp;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span style='font-size: 12pt;'&gt;&lt;span style='font-size: 14px;'&gt;&lt;span style='font-size: 10pt;'&gt;&lt;span style='font-family: arial, helvetica, sans-serif;'&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;The letter &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style='font-size: 10pt; font-family: arial, helvetica, sans-serif;'&gt;Y is in the word and in the correct spot.&lt;/span&gt; &lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;img src='/sys_attachment.do?sys_id=787fe99f2f3101102e98f5ecf699b6af' width='355' height='57' /&gt;&lt;/strong&gt;&lt;/p&gt; &lt;/td&gt; &lt;td style='width: 33.3333%;'&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&lt;span style='font-size: 14px;'&gt;&lt;span style='font-size: 10pt; font-family: arial, helvetica, sans-serif;'&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; The letter &lt;/span&gt;&lt;/span&gt;&lt;span style='font-size: 10pt; font-family: arial, helvetica, sans-serif;'&gt;A is in the word but in the wrong spot.&lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;img src='/sys_attachment.do?sys_id=0a3b2d1b2f3101102e98f5ecf699b67f' alt='Graphical user interface, applicationDescription automatically generated' width='351px' height='57px' /&gt;&lt;/p&gt; &lt;/td&gt; &lt;td style='width: 33.3333%; border-style: none;'&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&lt;span style='font-size: 10pt; font-family: arial, helvetica, sans-serif;'&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&lt;span style='font-size: 10pt; font-family: arial, helvetica, sans-serif;'&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; If the word doesn't exist in the list of accepted words.&lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-bottom: 0.5pt;'&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;img src='/sys_attachment.do?sys_id=023b2d1b2f3101102e98f5ecf699b681' alt='' width='352px' height='56px' /&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;hr /&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;table style='width: 100%; border-collapse: collapse;' border='0'&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style='width: 50%; text-align: center; vertical-align: top;'&gt; &lt;p style='text-align: left;'&gt;&lt;span style='font-size: 12pt;'&gt;To the right of your game, there's a hub.&lt;/span&gt;&lt;/p&gt; &lt;p style='text-align: left;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;img style='border: 1px solid black;' src='sys_attachment.do?sys_id=023b2d1b2f3101102e98f5ecf699b678' width='340' height='424' align='baseline' border='1' /&gt;&lt;/p&gt; &lt;p style='text-align: center;'&gt;&lt;span style='font-size: 12pt;'&gt;The first section &lt;strong&gt;Today's Posts&lt;/strong&gt; of the hub is where you can check out the number of tries you friends took to guess the word. You can post your score there if you wish to after successfully completing the game.&lt;/span&gt;&lt;/p&gt; &lt;p style='text-align: left;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p style='text-align: left;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;img style='border: 1px solid black;' src='sys_attachment.do?sys_id=0a3b2d1b2f3101102e98f5ecf699b679' width='360' height='228' align='baseline' border='1' /&gt;&lt;/p&gt; &lt;p style='text-align: center;'&gt;&lt;span style='font-size: 12pt;'&gt;You can see your game stats under the second section &lt;/span&gt;&lt;span style='font-size: 12pt;'&gt;&lt;strong&gt;Statistics&lt;/strong&gt;.&lt;/span&gt;&lt;/p&gt; &lt;/td&gt; &lt;td style='width: 100%; text-align: center;'&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;img src='/sys_attachment.do?sys_id=1b593d9f2f7101102e98f5ecf699b618' width='322' height='429' /&gt;&lt;/p&gt; &lt;p&gt;&lt;span style='font-size: 12pt;'&gt;This is the Game Over Popup. You can post your result using the Post button at the bottom right corner.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;img src='/sys_attachment.do?sys_id=8e3b2d1b2f3101102e98f5ecf699b675' alt='' width='273px' height='283px' /&gt;&lt;/p&gt; &lt;p style='text-align: center;'&gt;&lt;span style='font-size: 12pt;'&gt;Y&lt;/span&gt;&lt;span style='font-size: 12pt;'&gt;ou can take a screenshot of the pattern and share it with your friends!&lt;/span&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;hr /&gt; &lt;p class='normal_(Web)' style='margin-top: 5.0pt; margin-bottom: 5.0pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt; text-align: left;' align='center'&gt;&lt;span style='font-size: 14pt; font-family: arial, helvetica, sans-serif;'&gt;&lt;strong&gt;&lt;span style='text-decoration: underline;'&gt;Profile Management&lt;/span&gt;:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt; text-align: left;' align='center'&gt;&amp;nbsp;&lt;/p&gt; &lt;table style='width: 100%; border-collapse: collapse; border-style: none;'&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style='width: 50%;'&gt; &lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;img style='border: 1px solid black; align: baseline;' src='sys_attachment.do?sys_id=023b2d1b2f3101102e98f5ecf699b67b' width='624' height='160' align='baseline' border='1' /&gt;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;img style='border: 1px solid black; align: baseline;' src='sys_attachment.do?sys_id=0a3b2d1b2f3101102e98f5ecf699b67c' width='624' height='109' align='baseline' border='1' /&gt;&lt;/p&gt; &lt;/td&gt; &lt;td style='width: 50%; vertical-align: top;'&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&lt;span style='font-size: 12pt;'&gt;You can go to your profile by clicking on the top right corner of your screen.&lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&lt;span style='font-size: 12pt;'&gt;It opens a dropdown menu and click on the &lt;strong&gt;Profile&lt;/strong&gt; option.&lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5pt; margin-bottom: 5pt;'&gt;&lt;span style='font-size: 12pt;'&gt;From here you can carry out further actions like, changing password and adding a profile photo. &lt;/span&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p class='normal_(Web)' style='margin-top: 5.0pt; margin-bottom: 5.0pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;hr /&gt; &lt;p class='normal_(Web)' style='margin-top: 5.0pt; margin-bottom: 5.0pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5.0pt; margin-bottom: 5.0pt;'&gt;&lt;span style='font-size: 14pt; font-family: arial, helvetica, sans-serif;'&gt;&lt;strong&gt;&lt;u&gt;Winner Traits&lt;/u&gt;:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p class='normal_(Web)' style='margin-top: 5.0pt; margin-bottom: 5.0pt;'&gt;&amp;nbsp;&lt;/p&gt; &lt;ul style='list-style-position: inside;'&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;The winner will have the best max streak within a month.&lt;/li&gt; &lt;li class='normal_(Web)' style='font-size: 12pt;'&gt;If there are more than one candidate with the best max streak, the winner will have the lowest average number of tries and highest number of games won.&lt;/li&gt; &lt;/ul&gt; &lt;p class='normal_(Web)' style='margin-top: 5.0pt; margin-bottom: 5.0pt;'&gt;&amp;nbsp;&lt;/p&gt;",
+            "articleSysId" : "513be11b2f3101102e98f5ecf699b675",
+            "templateFieldData" : [ ],
+            "articleInfo" : {
+              "author" : "",
+              "displayAttachments" : false,
+              "kbCategory" : "",
+              "workflowState" : "published",
+              "kbKnowledgeBase" : "",
+              "number" : "KB0010001",
+              "shortDescription" : "How to play?",
+              "sysId" : "513be11b2f3101102e98f5ecf699b675",
+              "sysUpdatedOn" : "2015-06-11 17:10:53",
+              "sysViewCount" : 7,
+              "rating" : 5,
+              "revisedBy" : null,
+              "baseVersion" : null,
+              "isExpired" : false
+            }
+          }
+        },
+        "hideArticleHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "secondaryFields" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "hideKbCategoryInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideNumberLink" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideAuthorInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideActions" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideBlocksInformation" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "blocksInformation" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "6cc10e80b365b928029e6adbb704006f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : {
+        "padding" : "15px"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"rules":{},"styles":{},"element_id":"knowledge_content_1"}],
+        "root" : null,
+        "rules" : {},
+        "styles" : {"height":"100%","flex-direction":"column","display":"flex"},
+        "templateId" : null,
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ ]</data>
+        <description/>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"rules":{},"styles":{"flex":"1"},"element_id":"cbb1cedf2fb101102e98f5ecf699b6ea_Main"}],
+    "root" : null,
+    "rules" : null,
+    "styles" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  },
+  "version" : "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Game Guide</name>
+        <output_prop_mapping/>
+        <props>[ ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-21 08:45:00</sys_created_on>
+        <sys_id>0cc174362f9681102e98f5ecf699b6ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Game Guide</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0cc174362f9681102e98f5ecf699b6ea</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-21 08:45:03</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

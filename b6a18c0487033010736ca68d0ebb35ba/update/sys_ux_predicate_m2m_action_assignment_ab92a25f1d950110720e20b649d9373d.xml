@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_predicate_m2m_action_assignment">
+    <sys_ux_predicate_m2m_action_assignment action="INSERT_OR_UPDATE">
+        <declarative_action_assignment display_value="approve">eb92a25f70950110d98f83bc03bfe333</declarative_action_assignment>
+        <predicate display_value="My tasks requested item">2792a25fdd950110af610fbf9d04c93a</predicate>
+        <sys_class_name>sys_ux_predicate_m2m_action_assignment</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-02-01 13:12:23</sys_created_on>
+        <sys_id>ab92a25f1d950110720e20b649d9373d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_predicate_m2m_action_assignment_ab92a25f1d950110720e20b649d9373d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-02-01 13:12:23</sys_updated_on>
+    </sys_ux_predicate_m2m_action_assignment>
+</record_update>
