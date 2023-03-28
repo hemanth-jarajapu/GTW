@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
     <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
+        <controller/>
         <description/>
         <name>Popular articles event mapping</name>
         <parent_macroponent display_value="Landing Page">06bf997bfb0001105b766c8ae40edf43</parent_macroponent>
+        <source_component/>
         <source_da display_value="navigation">d46f400473211010c342d5fdbdf6a7cf</source_da>
         <source_element_id>data_row_3</source_element_id>
         <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
@@ -14,9 +16,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Popular articles event mapping</sys_name>
         <sys_overrides/>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_addon_event_mapping_46bf997bd10001106fb8df0c0d0bc224</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2021-12-02 18:18:43</sys_updated_on>

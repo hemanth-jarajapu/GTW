@@ -33,8 +33,5 @@
         <update_access>false</update_access>
         <user_role/>
         <ws_access>true</ws_access>
-        <extension_model/>
-        <sys_class_code/>
-        <sys_class_path/>
     </sys_db_object>
 </record_update>

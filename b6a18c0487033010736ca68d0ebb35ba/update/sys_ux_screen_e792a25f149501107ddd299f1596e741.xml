@@ -18,6 +18,7 @@
   "targets" : [ {
     "broker" : null,
     "clientScript" : null,
+    "conditional" : null,
     "declarativeAction" : null,
     "event" : {
       "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
@@ -101,6 +102,7 @@
   "targets" : [ {
     "broker" : null,
     "clientScript" : null,
+    "conditional" : null,
     "declarativeAction" : null,
     "event" : {
       "apiName" : "sn_canvas_core.MODAL_SELECTED",
@@ -131,11 +133,17 @@
               "address" : [ "bare" ]
             }
           },
-          "preserveState" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "preserveState" ]
-            }
+          "viewportElementId" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "viewportRoute" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "viewportFields" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
           }
         }
       },
@@ -160,6 +168,7 @@
   "targets" : [ {
     "broker" : null,
     "clientScript" : null,
+    "conditional" : null,
     "declarativeAction" : null,
     "event" : {
       "apiName" : "sn_canvas_core.MODAL_SELECTED",
@@ -188,7 +197,15 @@
             "type" : "JSON_LITERAL",
             "value" : null
           },
-          "preserveState" : {
+          "viewportElementId" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "viewportRoute" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "viewportFields" : {
             "type" : "JSON_LITERAL",
             "value" : null
           }
@@ -215,6 +232,7 @@
   "targets" : [ {
     "broker" : null,
     "clientScript" : null,
+    "conditional" : null,
     "declarativeAction" : null,
     "event" : {
       "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
@@ -286,17 +304,44 @@
 } ]</event_mappings>
         <macroponent display_value="Landing Page">6392a25f93950110f7c4266351e85b43</macroponent>
         <macroponent_config>{
-  "label" : "",
-  "bare" : true,
-  "scrollable" : "none",
-  "headerLevel" : "1",
-  "interceptNotifications" : false,
-  "propagateNotifications" : false
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "none"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
 }</macroponent_config>
         <name>Landing Page Default</name>
         <order>0</order>
         <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
         <required_translations>[ ]</required_translations>
+        <rollback_screen/>
         <screen_condition/>
         <screen_type display_value="Landing Page">af92a25fd2950110cf46e85a298cda32</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
@@ -304,7 +349,7 @@
         <sys_created_on>2022-02-01 13:12:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e792a25f149501107ddd299f1596e741</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Landing Page Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
@@ -312,6 +357,6 @@
         <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_screen_e792a25f149501107ddd299f1596e741</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-08 09:29:27</sys_updated_on>
+        <sys_updated_on>2022-03-19 16:19:27</sys_updated_on>
     </sys_ux_screen>
 </record_update>

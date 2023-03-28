@@ -9,7 +9,6 @@
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
-        <extension_model/>
         <is_extendable>false</is_extendable>
         <label>User Stats</label>
         <live_feed_enabled>false</live_feed_enabled>
@@ -19,17 +18,15 @@
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class/>
-        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_class_path/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-02-04 10:16:24</sys_created_on>
         <sys_id>ab07dd902f6901102e98f5ecf699b621</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>User Stats</sys_name>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_db_object_ab07dd902f6901102e98f5ecf699b621</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-04 10:16:24</sys_updated_on>

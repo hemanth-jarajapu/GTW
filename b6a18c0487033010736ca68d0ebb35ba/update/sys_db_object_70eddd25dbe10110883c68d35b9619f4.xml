@@ -9,7 +9,6 @@
         <create_access>false</create_access>
         <create_access_controls>false</create_access_controls>
         <delete_access>false</delete_access>
-        <extension_model/>
         <is_extendable>false</is_extendable>
         <label>User Reg Req 443681</label>
         <live_feed_enabled>false</live_feed_enabled>
@@ -19,9 +18,7 @@
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class/>
-        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_class_path/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-02-08 07:58:20</sys_created_on>
         <sys_id>70eddd25dbe10110883c68d35b9619f4</sys_id>

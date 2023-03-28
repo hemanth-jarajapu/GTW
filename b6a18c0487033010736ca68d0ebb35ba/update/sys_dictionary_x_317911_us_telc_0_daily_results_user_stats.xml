@@ -2,8 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="user_stats" table="x_317911_us_telc_0_daily_results">
         <active>true</active>
         <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true,encode_utf8=false</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -31,6 +30,7 @@
         <element>user_stats</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
@@ -48,18 +48,15 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2022-02-08 10:19:37</sys_created_on>
-        <sys_id>700e35652fe501102e98f5ecf699b643</sys_id>
-        <sys_mod_count>14</sys_mod_count>
         <sys_name>User Stats</sys_name>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_dictionary_x_317911_us_telc_0_daily_results_user_stats</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
         <sys_updated_on>2022-02-08 11:07:41</sys_updated_on>
@@ -70,6 +67,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>true</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>

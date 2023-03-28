@@ -9,7 +9,7 @@
         <next_question/>
         <order>100</order>
         <payload_name/>
-        <question display_value="Task" name="Task">fa1670e7a5013010d152b15d612cbbba</question>
+        <question display_value="Task" name="Task">cee789852f12101058cbe93df699b697</question>
         <roles/>
         <script/>
         <sys_class_name>sys_wizard_answer</sys_class_name>
@@ -18,9 +18,9 @@
         <sys_id>277d41a52f6101102e98f5ecf699b6b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Data Mining</sys_name>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_wizard_answer_277d41a52f6101102e98f5ecf699b6b4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-08 06:46:42</sys_updated_on>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Landing Page">63c5c4d6db124110883c68d35b9619a8</macroponent>
+        <name>Is The Row Filled</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api,event,helpers,imports}) {
+
+    var row = api.state.currentRow;
+    var inputs = api.state.inputs;
+    var rowData = inputs["row" + row];
+    var isInvalidInput = false;
+
+    for (var i = 1; i < 6; i++) {
+        if (rowData["c" + i]) {
+            if (!(/^[A-Za-z]+$/.test(rowData["c" + i]))) {
+                isInvalidInput = true;
+                break;
+            }
+        }
+    }
+
+    if (isInvalidInput) {
+        api.setState("disableCheck", true);
+    } else {
+        if (rowData.c1 && rowData.c2 && rowData.c3 && rowData.c4 && rowData.c5) {
+            api.setState("disableCheck", false);
+        } else {
+            api.setState("disableCheck", true);
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-19 16:16:05</sys_created_on>
+        <sys_id>48d508d6db124110883c68d35b96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Is The Row Filled</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_client_script_48d508d6db124110883c68d35b96197b</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-19 16:16:05</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

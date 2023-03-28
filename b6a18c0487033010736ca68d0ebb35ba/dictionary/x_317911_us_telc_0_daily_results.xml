@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="58349d982f2901102e98f5ecf699b6dd" label="Daily Results" max_length="40" name="x_317911_us_telc_0_daily_results" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Game Data" max_length="8000" name="game_data" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Pass" max_length="40" name="pass" type="boolean"/>
+        <element label="Pattern" max_length="500" name="pattern" read_only="true" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;    // Add your code here&#10;    var gdt = new GlideDateTime();&#10;    var gdtv = gdt.getNumericValue();&#10;    var cdt = new GlideDateTime(current.getValue(&quot;sys_updated_on&quot;));&#10;    var cdtv = cdt.getNumericValue();&#10;&#10;    var duration = parseInt((gdtv - cdtv) / (1000 * 60));&#10;    var value = &quot;&quot;;&#10;&#10;    if (duration &lt;= 60) {&#10;        value = duration + &quot;m ago&quot;;&#10;    } else {&#10;        var i = 0;&#10;        var diff = 0;&#10;        while (diff &gt;= 0) {&#10;            ++i;&#10;            diff = duration - (60 * i);&#10;        }&#10;        value = (i - 1) + &quot;H ago&quot;;&#10;    }&#10;    return value; // return the calculated value&#10;&#10;})(current);" label="Played" max_length="20" name="played" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Post It To Public" max_length="40" name="post" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Tries" max_length="40" name="tries" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" calculation="(function calculatedFieldValue(current) {&#10;&#10;    var stats = new GlideRecord(&quot;x_317911_us_telc_0_user_stats&quot;);&#10;    stats.get(&quot;user&quot;, current.user);&#10;    return stats;&#10;&#10;})(current);" label="User Stats" max_length="32" name="user_stats" read_only="true" reference="x_317911_us_telc_0_user_stats" type="reference" virtual="true"/>
+        <element label="Words" max_length="40" name="words" read_only="true" type="string"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+        <index name="index2">
+            <element name="user_stats"/>
+        </index>
+    </element>
+</database>

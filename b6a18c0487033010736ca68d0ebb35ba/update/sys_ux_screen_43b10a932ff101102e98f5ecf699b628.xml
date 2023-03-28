@@ -6,17 +6,44 @@
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Game Guide">cbb1cedf2fb101102e98f5ecf699b6ea</macroponent>
         <macroponent_config>{
-  "label" : "",
-  "bare" : true,
-  "scrollable" : "y",
-  "headerLevel" : "1",
-  "interceptNotifications" : false,
-  "propagateNotifications" : false
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
 }</macroponent_config>
         <name>Game Guide default</name>
         <order>0</order>
         <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
         <required_translations>[ ]</required_translations>
+        <rollback_screen/>
         <screen_condition/>
         <screen_type display_value="Game Guide">cbb1cedf2fb101102e98f5ecf699b6e4</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
@@ -24,7 +51,7 @@
         <sys_created_on>2022-02-26 07:20:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>43b10a932ff101102e98f5ecf699b628</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Game Guide default</sys_name>
         <sys_overrides/>
         <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
@@ -32,6 +59,6 @@
         <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_screen_43b10a932ff101102e98f5ecf699b628</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2022-02-26 07:24:53</sys_updated_on>
+        <sys_updated_on>2022-03-19 16:20:16</sys_updated_on>
     </sys_ux_screen>
 </record_update>

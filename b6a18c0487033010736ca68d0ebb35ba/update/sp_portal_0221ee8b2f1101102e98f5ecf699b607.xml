@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables/>
+        <dark_theme/>
         <default>false</default>
         <enable_ais>false</enable_ais>
         <enable_favorites>false</enable_favorites>
@@ -37,7 +38,6 @@
         <title>Guess the word!</title>
         <ts_index_group/>
         <url_suffix>word</url_suffix>
-        <user_registration_config/>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=0221ee8b2f1101102e98f5ecf699b607"/>
 </record_update>

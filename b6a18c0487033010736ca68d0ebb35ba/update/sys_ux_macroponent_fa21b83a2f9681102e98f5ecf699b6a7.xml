@@ -150,9 +150,12 @@
 } ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
+        <description/>
         <dispatched_events>7d0808e9ff57101035be517f793bf159,1cb0c1a15313101035beddeeff7b125f</dispatched_events>
         <events/>
+        <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
         <handled_events/>
         <interactions/>
         <interfaces/>
@@ -171,6 +174,7 @@
 }</layout>
         <macroponent_dependencies/>
         <name>DA Modal Ref Lookup</name>
+        <output_prop_mapping/>
         <props>[ {
   "name" : "sysId",
   "label" : "sysId",
@@ -280,9 +284,9 @@
         <sys_id>fa21b83a2f9681102e98f5ecf699b6a7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>DA Modal Ref Lookup</sys_name>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_macroponent_fa21b83a2f9681102e98f5ecf699b6a7</sys_update_name>
         <sys_updated_by>hemanth.jarajapu</sys_updated_by>
         <sys_updated_on>2022-03-21 08:42:27</sys_updated_on>

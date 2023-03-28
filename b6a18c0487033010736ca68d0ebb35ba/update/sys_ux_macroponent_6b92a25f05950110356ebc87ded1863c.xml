@@ -148,9 +148,12 @@
 } ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
+        <description/>
         <dispatched_events/>
         <events/>
+        <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
         <handled_events/>
         <interactions/>
         <interfaces/>
@@ -168,6 +171,7 @@
 }</layout>
         <macroponent_dependencies/>
         <name>Activity</name>
+        <output_prop_mapping/>
         <props>[ {
   "name" : "table",
   "label" : "table",
@@ -203,9 +207,9 @@
         <sys_id>6b92a25f05950110356ebc87ded1863c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Activity</sys_name>
-        <sys_package display_value="US Telco-PlayGround" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="US Telco-PlayGround">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
         <sys_update_name>sys_ux_macroponent_6b92a25f05950110356ebc87ded1863c</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2022-02-01 13:12:25</sys_updated_on>

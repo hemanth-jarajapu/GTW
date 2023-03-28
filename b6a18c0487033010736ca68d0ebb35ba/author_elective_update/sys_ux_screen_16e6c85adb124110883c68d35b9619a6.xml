@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Guess the Word Config">5392a25f2f9501102e98f5ecf699b615</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Profile">d2e6c85adb124110883c68d35b9619a4</macroponent>
+        <macroponent_config>{
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Profile default - 3.0.0 preview.</name>
+        <order>9999</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen display_value="Profile default">ef00504a2fed01102e98f5ecf699b6f8</rollback_screen>
+        <screen_condition/>
+        <screen_type display_value="Profile">a300504a2fed01102e98f5ecf699b6ef</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-19 16:20:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>16e6c85adb124110883c68d35b9619a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Profile default - 3.0.0 preview.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_update_name>sys_ux_screen_16e6c85adb124110883c68d35b9619a6</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-19 16:20:54</sys_updated_on>
+    </sys_ux_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sys_ux_screen_16e6c85adb124110883c68d35b9619a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Guess the Word Config">5392a25f2f9501102e98f5ecf699b615</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Profile">d2e6c85adb124110883c68d35b9619a4</macroponent><macroponent_config>{
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>Profile default - 3.0.0 preview.</name><order>9999</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen display_value="Profile default">ef00504a2fed01102e98f5ecf699b6f8</rollback_screen><screen_condition/><screen_type display_value="Profile">a300504a2fed01102e98f5ecf699b6ef</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>hemanth.jarajapu</sys_created_by><sys_created_on>2022-03-19 16:20:53</sys_created_on><sys_domain>global</sys_domain><sys_id>16e6c85adb124110883c68d35b9619a6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Profile default - 3.0.0 preview.</sys_name><sys_overrides/><sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package><sys_policy/><sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope><sys_update_name>sys_ux_screen_16e6c85adb124110883c68d35b9619a6</sys_update_name><sys_updated_by>hemanth.jarajapu</sys_updated_by><sys_updated_on>2022-03-19 16:20:54</sys_updated_on></sys_ux_screen></record_update>]]></payload>
+        <payload_hash>-1875856677</payload_hash>
+        <record_name>Profile default - 3.0.0 preview.</record_name>
+        <reverted_from/>
+        <source>5d4a856ddb210110883c68d35b9619a6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-19 16:20:54</sys_created_on>
+        <sys_id>f6e6c85adb124110883c68d35b9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fa2fb54320000001</sys_recorded_at>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-19 16:20:54</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>bee6c85a371241104cef14ed5196b8dd</update_guid>
+        <update_guid_history>bee6c85a371241104cef14ed5196b8dd:-1875856677,1ae6c85ad2124110533ab500df46c7a7:246992633</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2022-03-19 16:21:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>1a96b4b4e6fc47c08d8ec6c868174400</sys_id>
+        <sys_metadata>16e6c85adb124110883c68d35b9619a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Profile default - 3.0.0 preview.</sys_name>
+        <sys_package display_value="GTW Game" source="x_317911_us_telc_0">b6a18c0487033010736ca68d0ebb35ba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GTW Game">b6a18c0487033010736ca68d0ebb35ba</sys_scope>
+        <sys_scope_delete display_value="US Telco-PlayGround">71d3cbc204494dfcbe303ffbc242a3d1</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_16e6c85adb124110883c68d35b9619a6</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_16e6c85adb124110883c68d35b9619a6">f6e6c85adb124110883c68d35b9619de</sys_update_version>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2022-03-19 16:21:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
